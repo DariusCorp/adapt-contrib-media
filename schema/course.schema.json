@@ -23,16 +23,16 @@
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} and transcript{{/any}}.",
+                      "title": "Zonă ARIA",
+                      "default": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} și transcript{{/any}}.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "skipToTranscript": {
                       "type": "string",
-                      "title": "Skip to transcript",
-                      "default": "Skip to transcript",
+                      "title": "Sari la transcriere",
+                      "default": "Sari la transcriere",
                       "_adapt": {
                         "translatable": true
                       }
@@ -47,8 +47,8 @@
                     },
                     "pauseText": {
                       "type": "string",
-                      "title": "Pause",
-                      "default": "Pause",
+                      "title": "Pauză",
+                      "default": "Pauză",
                       "_adapt": {
                         "translatable": true
                       }
@@ -79,104 +79,104 @@
                     },
                     "tracksText": {
                       "type": "string",
-                      "title": "Captions/Subtitles",
-                      "default": "Captions/Subtitles",
+                      "title": "Subtitrări",
+                      "default": "Subtitrări",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "timeSliderText": {
                       "type": "string",
-                      "title": "Time Slider",
-                      "default": "Time Slider",
+                      "title": "Glisor de timp",
+                      "default": "Glisor de timp",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "muteText": {
                       "type": "string",
-                      "title": "Mute Toggle",
-                      "default": "Mute Toggle",
+                      "title": "Dezactivare sunet",
+                      "default": "Dezactivare sunet",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "unmuteStatusText": {
                       "type": "string",
-                      "title": "Unmute",
-                      "default": "Unmute",
+                      "title": "Activare sunet",
+                      "default": "Activare sunet",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "muteStatusText": {
                       "type": "string",
-                      "title": "Mute",
-                      "default": "Mute",
+                      "title": "Dezactivare sunet",
+                      "default": "Dezactivare sunet",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "volumeSliderText": {
                       "type": "string",
-                      "title": "Volume Slider",
-                      "default": "Volume Slider",
+                      "title": "Glisor de volum",
+                      "default": "Glisor de volum",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "fullscreenText": {
                       "type": "string",
-                      "title": "Fullscreen",
-                      "default": "Fullscreen",
+                      "title": "Ecran complet",
+                      "default": "Ecran complet",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "goFullscreenText": {
                       "type": "string",
-                      "title": "Go Fullscreen",
-                      "default": "Go Fullscreen",
+                      "title": "Mergi la ecran complet",
+                      "default": "Mergi la ecran complet",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "turnOffFullscreenText": {
                       "type": "string",
-                      "title": "Turn off Fullscreen",
-                      "default": "Turn off Fullscreen",
+                      "title": "Dezactivarea ecranului complet",
+                      "default": "Dezactivarea ecranului complet",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "noneText": {
                       "type": "string",
-                      "title": "None",
-                      "default": "None",
+                      "title": "Niciunul",
+                      "default": "Niciunul",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "skipBackText": {
                       "type": "string",
-                      "title": "Skip back %1 seconds",
-                      "default": "Skip back %1 seconds",
+                      "title": "Salt înapoi %1 secunde",
+                      "default": "Salt înapoi %1 secunde",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "allyVolumeControlText": {
                       "type": "string",
-                      "title": "Use Up/Down Arrow keys to increase or decrease volume.",
-                      "default": "Use Up/Down Arrow keys to increase or decrease volume.",
+                      "title": "Utilizați tastele săgeată sus/jos pentru a crește sau micșora volumul.",
+                      "default": "Utilizați tastele săgeată sus/jos pentru a crește sau micșora volumul.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "progessHelpText": {
                       "type": "string",
-                      "title": "Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.",
-                      "default": "Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.",
+                      "title": "Utilizați tastele săgeată stânga/dreapta pentru a avansa o secundă, săgețile sus/jos pentru a avansa zece secunde.",
+                      "default": "Utilizați tastele săgeată stânga/dreapta pentru a avansa o secundă, săgețile sus/jos pentru a avansa zece secunde.",
                       "_adapt": {
                         "translatable": true
                       }

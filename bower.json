@@ -7,7 +7,7 @@
   "component": "media",
   "targetAttribute": "_media",
   "displayName": "Media",
-  "description": "Playback of video and audio with a Flash Player fallback",
+  "description": "Redare video și audio",
   "main": "/js/adapt-contrib-media.js",
   "keywords": [
     "adapt-plugin",

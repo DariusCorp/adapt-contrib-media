@@ -14,7 +14,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Aspect acceptat",
           "default": "both",
           "enum": [
             "full-width",
@@ -27,8 +27,8 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the play button to start the video.",
+          "title": "Instrucțiuni",
+          "default": "Selectați butonul de redare pentru a începe videoclipul.",
           "_adapt": {
             "translatable": true
           }
@@ -48,7 +48,7 @@
             },
             "ogv": {
               "type": "string",
-              "title": "OGV source",
+              "title": "Sursă OGV",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "video"
@@ -56,7 +56,7 @@
             },
             "webm": {
               "type": "string",
-              "title": "WebM source",
+              "title": "Sursă WebM",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "video"
@@ -64,7 +64,7 @@
             },
             "mp3": {
               "type": "string",
-              "title": "MP3 source",
+              "title": "Sursă MP3",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "audio"
@@ -72,14 +72,14 @@
             },
             "source": {
               "type": "string",
-              "title": "External source",
-              "description": "Enter an external link, such as a YouTube URL",
+              "title": "Sursă externă",
+              "description": "Introduceți un link extern, cum ar fi o adresă URL YouTube",
               "default": ""
             },
             "type": {
               "type": "string",
-              "title": "External source type",
-              "description": "Select the external source type, for a YouTube link this would be 'video/youtube', and 'video/vimeo' for Vimeo",
+              "title": "Tipul sursei externe",
+              "description": "Selectați tipul de sursă externă, pentru un link YouTube acesta ar fi 'video/youtube' și 'video/vimeo' pentru Vimeo",
               "default": "",
               "enum": [
                 "",
@@ -90,8 +90,8 @@
             },
             "poster": {
               "type": "string",
-              "title": "Poster frame",
-              "description": "Image displayed before the video is played (except on Vimeo)",
+              "title": "Rama posterului",
+              "description": "Imaginea afișată înainte de redarea videoclipului (cu excepția Vimeo)",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -99,19 +99,19 @@
             },
             "cc": {
               "type": "array",
-              "title": "Closed captions",
+              "title": "Subtitrări complexe",
               "items": {
                 "type": "object",
                 "properties": {
                   "srclang": {
                     "type": "string",
-                    "title": "Language code",
+                    "title": "Codul limbii",
                     "default": ""
                   },
                   "src": {
                     "type": "string",
 
-                    "title": "WebVTT source",
+                    "title": "Sursă WebVTT",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "text"
@@ -124,8 +124,8 @@
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion trigger",
-          "description": "Defines what media event should trigger completion of this component",
+          "title": "Declanșator de finalizare",
+          "description": "Definește ce eveniment media ar trebui să declanșeze finalizarea acestei componente",
           "default": "play",
           "enum": [
             "inview",
@@ -136,25 +136,25 @@
         },
         "_useClosedCaptions": {
           "type": "boolean",
-          "title": "Enable closed captions",
+          "title": "Activați subtitrările complexe",
           "default": false
         },
         "_startLanguage": {
           "type": "string",
-          "title": "Initial closed captions language",
-          "description": "Select which closed caption language to display by default. Only required when closed captions are enabled and there are multiple languages",
+          "title": "Limbajul inițial al subtitrărilor",
+          "description": "Selectați limba de subtitrare pe care doriți să o afișați în mod implicit. Obligatoriu numai atunci când subtitrările sunt activate și există mai multe limbi",
           "default": "en"
         },
         "_showVolumeControl": {
           "type": "boolean",
-          "title": "Show volume control (not supported on mobile)",
-          "description": "When enabled, the volume control will appear in the media player. On mobile devices the audio level is controlled the device's physical volume controls",
+          "title": "Controlul volumului",
+          "description": "Când este activat, controlul volumului va apărea în playerul media. Pe dispozitivele mobile, nivelul audio este controlat de controlul volumului fizic al dispozitivului",
           "default": false
         },
         "_startVolume": {
           "type": "string",
-          "title": "Default volume (not supported on mobile)",
-          "description": "Defines the default volume. On mobile devices the audio level is under the user's physical control",
+          "title": "Volum implicit (nu este acceptat pe mobil)",
+          "description": "Definește volumul implicit. Pe dispozitivele mobile, nivelul audio este sub controlul fizic al utilizatorului",
           "default": "80%",
           "enum": [
             "0%",
@@ -173,12 +173,12 @@
         },
         "_allowFullScreen": {
           "type": "boolean",
-          "title": "Allow full screen",
+          "title": "Permiteți ecran complet",
           "default": false
         },
         "_aspectRatio": {
           "type": "string",
-          "title": "Aspect ratio",
+          "title": "Aspect",
           "default": "landscape",
           "enum": [
             "landscape",
@@ -189,50 +189,50 @@
         },
         "_pauseWhenOffScreen": {
           "type": "boolean",
-          "title": "Pause playback when no longer in view",
+          "title": "Întrerupeți redarea atunci când nu mai sunteți în vizualizare",
           "default": false
         },
         "_playsinline": {
           "type": "boolean",
-          "title": "Play videos inline on iOS",
-          "description": "If enabled, videos will play 'inline' on iPhones (the same way they do on iPads). Note that this feature is only available in iOS10 and above",
+          "title": "Redați videoclipuri inline pe iOS",
+          "description": "Dacă este activat, videoclipurile vor fi redate 'inline' pe iPhone (la fel ca pe iPad). Rețineți că această funcție este disponibilă numai în iOS10 și versiuni ulterioare",
           "default": false
         },
         "_preventForwardScrubbing": {
           "type": "boolean",
-          "title": "Attempt to prevent media scrubbing",
-          "description": "If enabled, will attempt to prevent users from skipping ahead in audio/video",
+          "title": "Încercați să preveniți derularea",
+          "description": "Dacă este activat, va încerca să împiedice utilizatorii să sară înainte în audio/video",
           "default": false
         },
         "_offsetMediaControls": {
           "type": "boolean",
-          "title": "Offset media controls",
-          "description": "If enabled, the media control bar will be respositioned below the media container to remove the standard overlap style.",
+          "title": "Controale media offset",
+          "description": "Dacă este activată, bara de control media va fi repoziționată sub containerul media pentru a elimina stilul standard de suprapunere.",
           "default": false
         },
         "_transcript": {
           "type": "object",
-          "title": "Transcript",
+          "title": "Transcriere",
           "default": {},
           "properties": {
             "_setCompletionOnView": {
               "type": "boolean",
-              "title": "Mark this component as complete when transcript is shown",
+              "title": "Marcați această componentă ca finalizată când este afișată transcrierea",
               "default": true
             },
             "_inlineTranscript": {
               "type": "boolean",
-              "title": "Enable inline transcript",
+              "title": "Activați transcrierea în linie",
               "default": false
             },
             "_externalTranscript": {
               "type": "boolean",
-              "title": "Enable linked transcript file",
+              "title": "Activați fișierul de transcriere legat",
               "default": false
             },
             "inlineTranscriptButton": {
               "type": "string",
-              "title": "Inline transcript open button label",
+              "title": "Eticheta butonului de deschidere a transcrierii în linie",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -240,7 +240,7 @@
             },
             "inlineTranscriptCloseButton": {
               "type": "string",
-              "title": "Inline transcript close button label",
+              "title": "Eticheta butonului de închidere a transcrierii în linie",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -248,7 +248,7 @@
             },
             "inlineTranscriptBody": {
               "type": "string",
-              "title": "Inline transcript",
+              "title": "Transcriere în linie",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -257,7 +257,7 @@
             },
             "transcriptLinkButton": {
               "type": "string",
-              "title": "Linked transcript file button label",
+              "title": "Eticheta butonului fișierului de transcriere legat",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -265,7 +265,7 @@
             },
             "transcriptLink": {
               "type": "string",
-              "title": "Linked transcript file source",
+              "title": "Sursa fișierului de transcriere legat",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "text"
@@ -275,8 +275,8 @@
         },
         "_playerOptions": {
           "type": "object",
-          "title": "Player options",
-          "description": "Optional object that can be used to customize the player",
+          "title": "Opțiuni player",
+          "description": "Obiect opțional care poate fi folosit pentru a personaliza playerul",
           "default": {},
           "_backboneForms": {
             "type": "CodeEditor",
